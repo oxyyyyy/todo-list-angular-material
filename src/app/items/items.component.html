@@ -1,0 +1,21 @@
+<mat-card>
+
+  <mat-card-header class="flex">
+    <mat-form-field>
+      <input matInput type="text" placeholder="Type todo here..." [(ngModel)]="inputData.title">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" [(ngModel)]="inputData.id">
+    </mat-form-field>
+    <button mat-button (click)="addItem()">LOG</button>
+  </mat-card-header>
+
+  <mat-card-content>
+    <ul>
+      <li *ngFor='let item of items'>
+        <mat-checkbox>{{ item.title }}</mat-checkbox>
+      </li>
+    </ul>
+  </mat-card-content>
+
+</mat-card>
