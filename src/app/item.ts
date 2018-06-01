@@ -1,4 +1,4 @@
 export class Item {
-  id: string;
   title: string;
+  isChecked: boolean;
 }

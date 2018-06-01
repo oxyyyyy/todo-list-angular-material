@@ -1,7 +1,17 @@
-.flex {
+.header {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 30px;
 }
 ul {
 	list-style: none;
+}
+.container {
+	padding: 50px 20% 0 20%;
+}
+mat-card-content {
+	padding-top: 15px;
+}
+.isChecked {
+	text-decoration: line-through;
 }
