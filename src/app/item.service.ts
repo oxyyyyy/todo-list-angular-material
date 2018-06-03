@@ -19,11 +19,12 @@ export class ItemService {
   }
 
   addItem(inputData) {
-    this.afs.collection('items').doc(inputData.title).set({ title: inputData.title, isChecked: false });
+    const generatedId = this.afs.createId();
+    this.afs.collection('items').doc(generatedId).set({ id: generatedId, title: inputData.title, isChecked: false });
   }
 
   checkItem(item) {
-    this.afs.collection('items').doc(item.title).update({
+    this.afs.collection('items').doc(item.id).update({
       isChecked: !item.isChecked
     });
   }

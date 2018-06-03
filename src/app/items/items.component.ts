@@ -14,10 +14,11 @@ export class ItemsComponent implements OnInit {
 
   items: Item[];
   inputData: Item = {
+    id: 0,
     title: '',
     isChecked: false
   };
-  isDisabledBtn = true;
+  isDisabledBtn = false;
 
   constructor(private itemService: ItemService) { }
 
