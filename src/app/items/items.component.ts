@@ -18,7 +18,7 @@ export class ItemsComponent implements OnInit {
     title: '',
     isChecked: false
   };
-  isDisabledBtn = false;
+  isDisabledBtn = true;
 
   constructor(private itemService: ItemService) { }
 
@@ -28,12 +28,26 @@ export class ItemsComponent implements OnInit {
     });
   }
 
+  toggleBtn() {
+    if (this.inputData.title === '') {
+      this.isDisabledBtn = true;
+    } else {
+      this.isDisabledBtn = false;
+    }
+  }
+
   addItem() {
     this.itemService.addItem(this.inputData);
+    this.inputData.title = '';
+    this.isDisabledBtn = true;
   }
 
   checkItem(item) {
     this.itemService.checkItem(item);
   }
+
+  // orderItems() {
+  //   this.itemService.orderItems();
+  // }
 
 }

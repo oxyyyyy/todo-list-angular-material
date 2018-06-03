@@ -29,4 +29,8 @@ export class ItemService {
     });
   }
 
+  // orderItems() {
+  //   this.afs.collection('items', ref => ref.orderBy('isChecked'));
+  // }
+
 }

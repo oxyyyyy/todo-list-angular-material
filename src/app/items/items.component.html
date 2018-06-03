@@ -3,12 +3,10 @@
 
     <mat-card-header class="header">
       <mat-form-field>
-        <input matInput type="text" placeholder="Type todo here..." [(ngModel)]="inputData.title" required>
+        <input matInput type="text" placeholder="Type todo here..." [(ngModel)]="inputData.title" (input)="toggleBtn()" required>
       </mat-form-field>
-      <!-- <mat-form-field>
-        <input matInput type="number" [(ngModel)]="inputData.id">
-      </mat-form-field> -->
       <button type="submit" class="add-btn" mat-raised-button color="primary" [disabled]=isDisabledBtn (click)="addItem()">Add</button>
+      <!-- <button class="add-btn" mat-raised-button color="primary" (click)="orderItems()">Order</button> -->
     </mat-card-header>
 
     <mat-divider></mat-divider>
