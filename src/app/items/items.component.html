@@ -1,8 +1,12 @@
 <div class="container">
   <mat-card>
 
+    <h1>Your's to-do list</h1>
+
+    <mat-divider></mat-divider>
+
     <mat-card-header class="header">
-      <mat-form-field>
+      <mat-form-field class="add-form">
         <input matInput type="text" placeholder="Type todo here..." [(ngModel)]="inputData.title" (input)="toggleBtn()" required>
       </mat-form-field>
       <button type="submit" class="add-btn" mat-raised-button color="primary" [disabled]=isDisabledBtn (click)="addItem()">Add</button>
