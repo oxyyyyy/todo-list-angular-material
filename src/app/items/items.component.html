@@ -1,5 +1,13 @@
 <div class="container">
-  <mat-card>
+
+  <mat-card class="animated fadeIn" *ngIf="showCard == false">
+    <div class="loading-container">
+      <h2>Loading...</h2>
+      <mat-spinner diameter=30 color="accent"></mat-spinner>
+    </div>
+  </mat-card>
+
+  <mat-card class="animated fadeInUp" *ngIf="showCard">
 
     <h1>Your's to-do list</h1>
 
@@ -9,7 +17,7 @@
       <mat-form-field class="add-form">
         <input matInput type="text" placeholder="Type todo here..." [(ngModel)]="inputData.title" (input)="toggleBtn()" required>
       </mat-form-field>
-      <button type="submit" class="add-btn" mat-raised-button color="primary" [disabled]=isDisabledBtn (click)="addItem()">Add</button>
+      <button type="submit" class="add-btn" mat-raised-button color="accent" [disabled]=isDisabledBtn (click)="addItem()">Add</button>
       <!-- <button class="add-btn" mat-raised-button color="primary" (click)="orderItems()">Order</button> -->
     </mat-card-header>
 
@@ -24,4 +32,5 @@
     </mat-card-content>
 
   </mat-card>
+
 </div>
