@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-items></app-items>\n"
+module.exports = "<app-items></app-items>\r\n"
 
 /***/ }),
 
@@ -103,11 +103,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm5/card.es5.js");
 /* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm5/divider.es5.js");
 /* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/list */ "./node_modules/@angular/material/esm5/list.es5.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _items_items_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./items/items.component */ "./src/app/items/items.component.ts");
-/* harmony import */ var _item_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./item.service */ "./src/app/item.service.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/progress-spinner */ "./node_modules/@angular/material/esm5/progress-spinner.es5.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _items_items_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./items/items.component */ "./src/app/items/items.component.ts");
+/* harmony import */ var _item_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./item.service */ "./src/app/item.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -131,31 +132,33 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"],
-                _items_items_component__WEBPACK_IMPORTED_MODULE_13__["ItemsComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"],
+                _items_items_component__WEBPACK_IMPORTED_MODULE_14__["ItemsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_16__["FormsModule"],
                 angularfire2__WEBPACK_IMPORTED_MODULE_2__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].firebaseConfig),
                 angularfire2_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestoreModule"],
-                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_16__["BrowserAnimationsModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_17__["BrowserAnimationsModule"],
                 _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_6__["MatCheckboxModule"],
                 _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInputModule"],
                 _angular_material_form_field__WEBPACK_IMPORTED_MODULE_8__["MatFormFieldModule"],
                 _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"],
                 _angular_material_button__WEBPACK_IMPORTED_MODULE_5__["MatButtonModule"],
                 _angular_material_divider__WEBPACK_IMPORTED_MODULE_10__["MatDividerModule"],
-                _angular_material_list__WEBPACK_IMPORTED_MODULE_11__["MatListModule"]
+                _angular_material_list__WEBPACK_IMPORTED_MODULE_11__["MatListModule"],
+                _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_12__["MatProgressSpinnerModule"]
             ],
-            providers: [_item_service__WEBPACK_IMPORTED_MODULE_14__["ItemService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
+            providers: [_item_service__WEBPACK_IMPORTED_MODULE_15__["ItemService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -223,7 +226,7 @@ var ItemService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "h1 {\r\n\tfont-family: 'Lato', sans-serif;\r\n\tfont-size: 50px;\r\n\tfont-weight: 300;\r\n\ttext-align: center;\r\n\tmargin-bottom: 24px;\r\n}\r\n.header {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tmargin-bottom: 30px;\r\n}\r\nul {\r\n\tlist-style: none;\r\n}\r\n.container {\r\n\tpadding: 50px 20% 0 20%;\r\n}\r\n@media (max-width: 767px) {\r\n\t.container {\r\n\t\tpadding: 50px 5% 0 5%;\r\n\t}\r\n}\r\n@media (min-width: 1200px) {\r\n\t.container {\r\n\t\tpadding: 50px 30% 0 30%;\r\n\t}\r\n}\r\nmat-card-content {\r\n\tpadding-top: 15px;\r\n}\r\n.isChecked {\r\n\ttext-decoration: line-through;\r\n}\r\n.add-form {\r\n\tmargin-top: 15px;\r\n}\r\n"
+module.exports = ".loading-container {\r\n\tdisplay: flex;\r\n\tjustify-content: space-between;\r\n\talign-items: center;\r\n}\r\nh2 {\r\n\tfont-weight: 500;\r\n}\r\nh1 {\r\n\tfont-family: 'Lato', sans-serif;\r\n\tfont-size: 50px;\r\n\tfont-weight: 300;\r\n\ttext-align: center;\r\n\tmargin-bottom: 24px;\r\n}\r\n.header {\r\n\tdisplay: flex;\r\n\tflex-direction: column;\r\n\tmargin-bottom: 30px;\r\n}\r\nul {\r\n\tlist-style: none;\r\n}\r\n.container {\r\n\tpadding: 25px 20%;\r\n}\r\nmat-card-content {\r\n\tpadding-top: 15px;\r\n}\r\n.isChecked {\r\n\ttext-decoration: line-through;\r\n}\r\n.add-form {\r\n\tmargin-top: 15px;\r\n}\r\n/* Media */\r\n@media (max-width: 767px) {\r\n\t.container {\r\n\t\tpadding: 5%;\r\n\t}\r\n\th1 {\r\n\t\tfont-size: 40px;\r\n\t}\r\n}\r\n@media (min-width: 1200px) {\r\n\t.container {\r\n\t\tpadding: 50px 30%;\r\n\t}\r\n}\r\n"
 
 /***/ }),
 
@@ -234,7 +237,7 @@ module.exports = "h1 {\r\n\tfont-family: 'Lato', sans-serif;\r\n\tfont-size: 50p
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <mat-card>\n\n    <h1>Your's to-do list</h1>\n\n    <mat-divider></mat-divider>\n\n    <mat-card-header class=\"header\">\n      <mat-form-field class=\"add-form\">\n        <input matInput type=\"text\" placeholder=\"Type todo here...\" [(ngModel)]=\"inputData.title\" (input)=\"toggleBtn()\" required>\n      </mat-form-field>\n      <button type=\"submit\" class=\"add-btn\" mat-raised-button color=\"primary\" [disabled]=isDisabledBtn (click)=\"addItem()\">Add</button>\n      <!-- <button class=\"add-btn\" mat-raised-button color=\"primary\" (click)=\"orderItems()\">Order</button> -->\n    </mat-card-header>\n\n    <mat-divider></mat-divider>\n\n    <mat-card-content>\n      <mat-list>\n        <mat-list-item *ngFor='let item of items'>\n          <mat-checkbox [(ngModel)]=\"item.isChecked\" (click)=\"checkItem(item)\" [ngClass]=\"{isChecked: item.isChecked}\">{{ item.title }}</mat-checkbox>\n        </mat-list-item>\n      </mat-list>\n    </mat-card-content>\n\n  </mat-card>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n\r\n  <mat-card class=\"animated fadeIn\" *ngIf=\"showCard == false\">\r\n    <div class=\"loading-container\">\r\n      <h2>Loading...</h2>\r\n      <mat-spinner diameter=30 color=\"accent\"></mat-spinner>\r\n    </div>\r\n  </mat-card>\r\n\r\n  <mat-card class=\"animated fadeInUp\" *ngIf=\"showCard\">\r\n\r\n    <h1>Your's to-do list</h1>\r\n\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-card-header class=\"header\">\r\n      <mat-form-field class=\"add-form\">\r\n        <input matInput type=\"text\" placeholder=\"Type todo here...\" [(ngModel)]=\"inputData.title\" (input)=\"toggleBtn()\" required>\r\n      </mat-form-field>\r\n      <button type=\"submit\" class=\"add-btn\" mat-raised-button color=\"accent\" [disabled]=isDisabledBtn (click)=\"addItem()\">Add</button>\r\n      <!-- <button class=\"add-btn\" mat-raised-button color=\"primary\" (click)=\"orderItems()\">Order</button> -->\r\n    </mat-card-header>\r\n\r\n    <mat-divider></mat-divider>\r\n\r\n    <mat-card-content>\r\n      <mat-list>\r\n        <mat-list-item *ngFor='let item of items'>\r\n          <mat-checkbox [(ngModel)]=\"item.isChecked\" (click)=\"checkItem(item)\" [ngClass]=\"{isChecked: item.isChecked}\">{{ item.title }}</mat-checkbox>\r\n        </mat-list-item>\r\n      </mat-list>\r\n    </mat-card-content>\r\n\r\n  </mat-card>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -270,11 +273,13 @@ var ItemsComponent = /** @class */ (function () {
             isChecked: false
         };
         this.isDisabledBtn = true;
+        this.showCard = false;
     }
     ItemsComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.itemService.getItems().subscribe(function (items) {
             _this.items = items;
+            _this.showCard = true;
         });
     };
     ItemsComponent.prototype.toggleBtn = function () {
