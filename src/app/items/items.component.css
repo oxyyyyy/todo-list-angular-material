@@ -24,6 +24,9 @@ ul {
 .container {
 	padding: 25px 20%;
 }
+mat-card {
+	overflow: hidden;
+}
 mat-card-content {
 	padding-top: 15px;
 }
